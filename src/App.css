@@ -33,7 +33,6 @@ aside {
   margin: 3px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -4px -4px 0;
   list-style: none;
   padding-top: 50px;
   gap: 40px;
