@@ -12,7 +12,6 @@
   display: flex;
 }
 .random_character {
-  
   flex: 0 0 50%;
   max-width: 50%;
   height: 250px;

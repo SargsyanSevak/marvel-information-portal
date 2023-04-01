@@ -6,7 +6,9 @@ const Skeleton = () => {
       <h4>Please select a character to see information</h4>
       <div className="skeleton_body">
         <div className="top_side">
-          <div className="circle"></div>
+          <div className="circle">
+            <span className="circle"></span>
+          </div>
           <div className="item_small"></div>
         </div>
         <div className="bottom_side">

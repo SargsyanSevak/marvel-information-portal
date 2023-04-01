@@ -29,7 +29,7 @@ aside {
 
 #content {
   min-height: 800px;
-  flex: 2 1 65%;
+  flex: 1 1 65%;
   margin: 3px;
   display: flex;
   flex-wrap: wrap;
