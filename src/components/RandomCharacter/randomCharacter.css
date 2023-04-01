@@ -7,7 +7,7 @@
   padding: 20px;
   flex: 0 0 50%;
   max-width: 50%;
-  height: 250px;
+  min-height: 250px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
   display: flex;
 }
@@ -107,6 +107,6 @@
   }
   .description .btn_group{
     margin-top: 20px;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 }
