@@ -1,0 +1,56 @@
+header .marvel_information_portal h4 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-decoration: none;
+}
+header .marvel_information_portal h4 .hype{
+  text-decoration: none;
+  color: black;
+}
+header .marvel_information_portal h4 span {
+  color: #9f0013;
+}
+header .mini_nav {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+.nav__item {
+  list-style: none;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  cursor: pointer;
+}
+.nav__item:nth-child(1):after{
+  content: '/';
+  font-size: 23px;
+  font-weight: bold;
+  padding-left: 1rem;
+} 
+.nav_link {
+  color: black;
+  text-decoration: none;
+}
+
+.active__link {
+  color: #9f0013;
+  text-decoration: none;
+}
+@media all and (max-width: 550px) {
+  header .marvel_information_portal h4,
+  .nav__item {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 450px) {
+  header .marvel_information_portal h4,
+  .nav__item {
+    font-size: 16px;
+  }
+}

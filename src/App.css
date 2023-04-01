@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 20px;
+  padding: 0px 50px;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#flexContainer {
   display: flex;
-  flex-direction: column;
+}
+header {
+  min-height: 100px;
+  margin: 3px;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+aside {
+  flex: 1 1 35%;
+  min-width: 350px;
+  padding: 40px 0px 0px 30px;
 }
 
-.App-link {
-  color: #61dafb;
+#content {
+  min-height: 800px;
+  flex: 2 1 65%;
+  margin: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4px -4px 0;
+  list-style: none;
+  padding-top: 50px;
+  gap: 40px;
+}
+.shadow {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+.aside-photo {
+  position: absolute;
+  width: 367px;
+  height: 272px;
+  bottom: -40px;
+  right: 0;
+  z-index: -1;
+}
+.paragraph {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.heading-white {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+.heading-white:hover{
+  color: #9F0013;
+}
+.m20 {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: block;
+}
+.heading-black {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width: 760px) {
+  body {
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+  #flexContainer {
+    flex-flow: column wrap;
+  }
+  header {
+    min-height: 75px;
+  }
+  aside {
+    min-height: 50px;
+    order: 2;
+    padding: 0;
+  }
+  #content {
+    min-height: 725px;
+    order: 3;
   }
 }

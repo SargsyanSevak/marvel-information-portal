@@ -1,0 +1,49 @@
+.header_banner {
+  width: 100%;
+  height: 100px;
+  background: #232222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  margin-bottom: 70px;
+}
+.header_banner .left_side {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+.header_banner .left_side img,
+.header_banner img {
+  width: 152px;
+  max-width: 100%;
+}
+.header_banner h4 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+@media all and (max-width: 760px) {
+  .header_banner .left_side {
+    gap: 20px;
+  }
+  .header_banner .left_side img,
+  .header_banner img {
+    width: 100px;
+    height: 100px;
+  }
+  .header_banner h4 {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 450px) {
+  .header_banner {
+    justify-content: space-around;
+    padding: 0;
+  }
+}

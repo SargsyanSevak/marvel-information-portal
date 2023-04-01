@@ -1,0 +1,33 @@
+.btn {
+  position: relative;
+  width: 101px;
+  height: 38px;
+  border: none;
+  outline: none;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: -10px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+.btn:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: -10px;
+  right: -10px;
+  background-color: white;
+  transform: rotate(45deg);
+}
