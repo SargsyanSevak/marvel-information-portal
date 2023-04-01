@@ -71,7 +71,7 @@
 @media all and (max-width: 760px) {
   .comics-details-container{
     flex-direction: column;
-    padding: 20px 0px;
+    padding: 20px 20px;
   }
   .comics-details-img,
   .comics-details-description{
