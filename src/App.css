@@ -83,8 +83,13 @@ aside {
   line-height: 26px;
   color: #000000;
 }
+@media all and (max-width: 1100px) {
+  #content,aside{
+    flex: 1 1 50%;
+  }
+}
 
-@media all and (max-width: 876px) {
+@media all and (max-width: 950px) {
   body {
     padding: 0;
   }
@@ -107,4 +112,8 @@ aside {
     display: none;
   }
 }
-
+@media all and (max-width: 676px) {
+  #content{
+    justify-content: center;
+  }
+}
