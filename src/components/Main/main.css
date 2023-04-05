@@ -19,6 +19,13 @@
   justify-content: center;
   align-items: center;
 }
-@media all and (min-width: 1400px) {
- 
+@media all and (max-width: 430px) {
+ .character_card{
+  width: 150px;
+ }
+}
+@media all and (max-width: 330px) {
+  .character_card{
+    width: 100%;
+   }
 }
