@@ -114,6 +114,6 @@ aside {
 }
 @media all and (max-width: 676px) {
   #content{
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
