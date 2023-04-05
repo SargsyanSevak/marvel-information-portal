@@ -1,5 +1,6 @@
 .character_card {
-  flex: 2 1 200px;
+  width: 200px;
+  max-width: 100%;
   height: 318px;
   background: #232222;
   text-decoration: none;
@@ -19,7 +20,5 @@
   align-items: center;
 }
 @media all and (min-width: 1400px) {
-  .character_card{
-    flex: 1 0 30%;
-  }
+ 
 }
