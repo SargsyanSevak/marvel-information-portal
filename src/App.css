@@ -101,6 +101,7 @@ aside {
   #content {
     min-height: 725px;
     order: 3;
+    padding: 50px;
   }
   .aside-photo{
     display: none;
