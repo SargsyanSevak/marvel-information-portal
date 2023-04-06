@@ -13,7 +13,7 @@ const SearchResult = () => {
   const character = charactersData.find(
     (comics) => comics.id.toString() === id
   );
-  console.log(character);
+  
   return (
     <div className="SearchResult">
       <HeaderBanner />
