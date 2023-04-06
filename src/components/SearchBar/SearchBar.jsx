@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import MyButton from "../MyButton/MyButton";
-import { charactersData } from "../../assets/data/charactersData";
+import { ContextValue } from "../MyContext/MyContext";
+
 import "./search-bar.css";
 const SearchBar = () => {
   const [value, setValue] = useState("");
@@ -9,18 +11,19 @@ const SearchBar = () => {
   const [findedResult, setFindedResult] = useState([]);
   const [error, setError] = useState(false);
   const [toPage, setToPage] = useState(false);
+  const {charactersData} = useContext(ContextValue)
   const handleSearch = () => {
     if (value === "") {
       setError(true);
       setAlert("This field is required");
     } else {
       let getCharacter = charactersData.find((character) =>
-        character.title.toLowerCase().includes(value.toLowerCase())
+        character.name.toLowerCase().includes(value.toLowerCase())
       );
       if (getCharacter) {
         setError(false);
         setToPage(true);
-        setAlert(`There is! Visit ${getCharacter.title} page?`);
+        setAlert(`There is! Visit ${getCharacter.name} page?`);
         setFindedResult(getCharacter);
       } else {
         setError(true);

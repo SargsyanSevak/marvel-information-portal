@@ -10,7 +10,9 @@
   font-size: 14px;
   line-height: 16px;
   cursor: pointer;
+  transition: all .3s;
 }
+
 .btn:before {
   content: "";
   position: absolute;

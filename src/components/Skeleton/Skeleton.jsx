@@ -1,24 +1,26 @@
 import React from "react";
 import "./skeleton.css";
-const Skeleton = () => {
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+const SkeletonAnim = () => {
   return (
     <div className="skeleton">
       <h4>Please select a character to see information</h4>
-      <div className="skeleton_body">
-        <div className="top_side">
-          <div className="circle">
-            <span className="circle"></span>
+      <SkeletonTheme>
+        <div className="skeleton-body">
+          <div className="sksleton-circle">
+            <Skeleton circle width={"40px"} height={"40px"} />
           </div>
-          <div className="item_small"></div>
+          <div className="skeleton-item">
+            <Skeleton height={"20px"} />
+          </div>
         </div>
-        <div className="bottom_side">
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-        </div>
-      </div>
+        <Skeleton height={"35px"} style={{margin:'10px 0px'}}/>
+        <Skeleton height={"35px"} style={{margin:'10px 0px'}}/>
+        <Skeleton height={"35px"} style={{margin:'10px 0px'}}/>
+      </SkeletonTheme>
     </div>
   );
 };
 
-export default Skeleton;
+export default SkeletonAnim;

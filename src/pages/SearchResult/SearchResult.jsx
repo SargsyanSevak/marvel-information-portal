@@ -1,28 +1,34 @@
 import React from "react";
 import "./search-result.css";
 import { useParams } from "react-router-dom";
-import { charactersData } from "../../assets/data/charactersData";
 import HeaderBanner from "../../components/HeaderBanner/HeaderBanner";
+import { useContext } from "react";
+import { ContextValue } from "../../components/MyContext/MyContext";
+import Loader from "../../components/Loader/Loader";
+
+
 const SearchResult = () => {
   const { id } = useParams();
+  const {charactersData} = useContext(ContextValue)
   const character = charactersData.find(
     (comics) => comics.id.toString() === id
   );
-
-  const { title, description, imgurl } = character;
-
+  console.log(character);
   return (
     <div className="SearchResult">
       <HeaderBanner />
-      <div className="search-container">
+    {  
+    character ?
+    <div className="search-container">
         <div className="img_container">
-          <img src={imgurl} alt="" />
+          <img src={character.thumbnail.path+'.jpg'} alt="" />
         </div>
         <div className="search_description_container">
-          <h3>{title}</h3>
-          <p>{description}</p>
+          <h3>{character.name}</h3>
+          <p>{character.description}</p>
         </div>
-      </div>
+      </div> : <Loader/>
+      }
     </div>
   );
 };

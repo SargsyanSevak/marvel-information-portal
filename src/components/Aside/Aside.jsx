@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import MyButton from "../MyButton/MyButton";
 import { ContextValue } from "../MyContext/MyContext";
 import SearchBar from "../SearchBar/SearchBar";
-import Skeleton from "../Skeleton/Skeleton";
+import SkeletonAnim from "../Skeleton/Skeleton";
 import "./aside.css";
 const Aside = () => {
   const { activeCharacter } = useContext(ContextValue);
@@ -15,10 +15,10 @@ const Aside = () => {
           <div className="character_details">
             <div className="container">
               <div className="img_container">
-                <img src={activeCharacter[0].imgurl} alt="" />
+                <img src={activeCharacter[0].thumbnail.path+'.jpg'} alt="" />
               </div>
               <div className="title_btns">
-                <h4>{activeCharacter[0].title}</h4>
+                <h4>{activeCharacter[0].name}</h4>
                 <div className="btns_group_details">
                   <Link to={`/search/${activeCharacter[0].id}`}>
                   <MyButton title="HOMEPAGE" bg="#9F0013" color="white" />
@@ -28,15 +28,15 @@ const Aside = () => {
               </div>
             </div>
             <div className="description_container">
-              <p>{activeCharacter[0].description}</p>
+              <p>{activeCharacter[0].comics.description}</p>
             </div>
             <div className="comics_container">
               <ul className="comics__title">
                 Comics :
-                {activeCharacter[0].comics.map(function (item, i) {
+                {activeCharacter[0].comics.items.map(function (item, i) {
                   return (
                     <li key={i} className="comics_item_li">
-                      {item}
+                      {item.name}
                     </li>
                   );
                 })}
@@ -46,7 +46,7 @@ const Aside = () => {
           <SearchBar />
         </div>
       ) : (
-        <Skeleton />
+        <SkeletonAnim />
       )}
     </aside>
   );
