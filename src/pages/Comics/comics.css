@@ -8,7 +8,7 @@
 .comics_card {
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
   flex-direction: column;
-  width: 255px;
+  width: 225px;
   min-height: 346px;
   display: flex;
   justify-content: center;

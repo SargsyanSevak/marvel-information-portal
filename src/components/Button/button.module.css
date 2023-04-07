@@ -1,0 +1,24 @@
+.btn{
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    clip-path: polygon(0 27%, 7% 14%, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 73%, 91% 89%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+    transition: var(--transition);
+}
+.btn:hover{
+    margin-bottom: 10px;
+}
+.red {
+    background-color: var(--red);
+}
+.gray {
+    background-color: var(--gray);
+}

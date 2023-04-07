@@ -2,12 +2,13 @@ import React from "react";
 import Aside from "../../components/Aside/Aside";
 import asidePhoto from "../../assets/image/asidePhoto.png";
 import Main from "../../components/Main/Main";
-import RandomCharacter from "../../components/RandomCharacter/RandomCharacter";
+import RandomCharacters from "../../components/RandomCharacters/RandomCharacters";
+
 
 const Characters = () => {
   return (
     <div>
-      <RandomCharacter />
+      <RandomCharacters />
       <section id="flexContainer">
         <Main />
         <Aside />
