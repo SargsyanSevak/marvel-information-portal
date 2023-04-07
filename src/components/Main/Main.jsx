@@ -5,7 +5,7 @@ import { useContext, useState } from "react";
 import MyButton from "../MyButton/MyButton";
 import { ContextValue } from "../MyContext/MyContext";
 import Loader from "../Loader/Loader";
-const itemsPerRow = 12;
+const itemsPerRow = 9;
 
 const Main = () => {
   const [next, setNext] = useState(itemsPerRow);
@@ -17,7 +17,7 @@ const Main = () => {
     );
   };
   const handleMoreImage = () => {
-    setNext(next + 4);
+    setNext(next + 3);
   };
   return (
     <div id="content">
