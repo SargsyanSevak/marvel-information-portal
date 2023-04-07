@@ -4,6 +4,7 @@
   display: flex;
   gap: 20px;
   min-height: 230px;
+  position: relative;
 }
 .random-characters-right {
   padding: 20px;
