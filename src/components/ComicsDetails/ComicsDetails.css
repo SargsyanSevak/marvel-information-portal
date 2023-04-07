@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 100%;
   display: flex;
+  position: relative;
 }
 .comics__img__container{
   width: 30%;
@@ -20,7 +21,15 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
+.back_to_all{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  transition: var(--transition);
+}
+.back_to_all:hover{
+  color: var(--red);
+}
 @media all and (max-width: 776px) {
   .comics_details_container{
     flex-direction: column;
@@ -39,6 +48,9 @@
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+  }
+  .back_to_all{
+    top: -45px;
   }
 }
 

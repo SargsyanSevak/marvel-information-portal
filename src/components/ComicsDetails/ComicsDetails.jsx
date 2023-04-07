@@ -22,7 +22,7 @@ const ComicsDetails = () => {
                 <img src={comics.thumbnail.path + ".jpg"} alt="" />
                 </div>
                 <div className="comics__description__container">
-                  <div className=".title_bold_black_22">
+                  <div className="title_bold_black_22">
                     <h4>{comics.title}</h4>
                   </div>
                   <div className="paragraph_18">
@@ -40,8 +40,11 @@ const ComicsDetails = () => {
                   ) : (
                     <span>NOT AVAILABLE </span>
                   )}
-            </div>
+                 </div>
                 </div>
+                <Link to={"/comics"} className="back_to_all title_bold_18">
+            Back to all
+          </Link>
             </div>
           ) : <Loader/>
         }
