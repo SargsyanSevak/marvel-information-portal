@@ -10,7 +10,7 @@ const Button = ({ appearance,href, children, ...props }) => {
     <Link to={href} className='link'>
       <button
         className={classNames(
-          styles.btn,
+          styles.btn1,
           appearance === "red" ? styles.red : styles.gray
         )}
         {...props}
