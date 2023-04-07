@@ -25,7 +25,7 @@ const ComicsDetails = () => {
               <h4>{comics.title}</h4>
             </div>
             <div className="paragraph_18">
-              <p>{comics.description}</p>
+              <p>{comics.description ? comics.description : "Description not found"}</p>
             </div>
             <div className="pargraph_18">
               <p>{comics.pageCount > 0 ? comics.pageCount : "No"} pages</p>
