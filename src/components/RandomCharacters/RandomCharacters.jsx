@@ -15,8 +15,7 @@ const RandomCharacters = () => {
     let rand = await charactersData[
       Math.floor(Math.random() * charactersData.length)
     ];
-    let data = await rand;
-    setItem(data);
+    setItem(rand);
   };
 
   useEffect(() => {
@@ -39,7 +38,7 @@ const RandomCharacters = () => {
                 <p className="paragraph_14">{item?.description}</p>
               </div>
               <div className="btn_group">
-                <Button appearance="red" href={"#"}>
+                <Button appearance="red" href={`/search/${item.id}`}>
                   Homepage
                 </Button>
                 <Button appearance="gray" href={"#"}>
