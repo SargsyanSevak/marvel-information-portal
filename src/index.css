@@ -9,7 +9,7 @@ a {
   color: inherit;
   position: relative;
   overflow: hidden;
-
+  cursor: pointer;
 }
 
 ul {
@@ -23,9 +23,6 @@ ul {
   --green: #03710E;
   --font-family : 'Roboto Condensed';
   --transition : all .3s ease-in-out;
-  --lg :1200px;
-  --md : 992px;
-  --sm : 768px;
 }
 
 .paragraph_14{
@@ -87,6 +84,14 @@ ul {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+}
+.title_bold_28{
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: black;
 }
 .title_light{
   font-family: 'Roboto Condensed';

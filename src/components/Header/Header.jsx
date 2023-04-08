@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header>
       <div className="marvel_information_portal">
-        <h4>
+        <h4 className="title_bold_28">
           <Link to={'/'} className='hype'>
             <span>Marvel</span> information portal
           </Link>

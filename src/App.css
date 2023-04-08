@@ -12,7 +12,6 @@ body {
   width: 1200px;
   max-width: 100%;
 }
-
 #flexContainer {
   display: flex;
 }
@@ -29,7 +28,6 @@ aside {
   min-width: 350px;
   padding: 40px 0px 0px 30px;
 }
-
 #content {
   min-height: 800px;
   flex: 1 1 65%;
@@ -41,9 +39,6 @@ aside {
   padding-top: 50px;
   gap: 30px 20px;
   position: relative;
-}
-.shadow {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 .random__characters {
   min-height:250px;
@@ -58,39 +53,10 @@ aside {
   right: 0;
   z-index: -1;
 }
-.paragraph {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #000000;
-}
-.heading-white {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: #ffffff;
-  text-decoration: none;
-  transition: .3s ease-in-out;
-}
-.heading-white:hover{
-  color: #9F0013;
-}
 .m20 {
   margin-top: 20px;
   margin-left: 20px;
   display: block;
-}
-.heading-black {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
 }
 
 @media all and (max-width: 1100px) {
@@ -123,7 +89,6 @@ aside {
   .aside-photo{
     display: none;
   }
-  
 }
 @media all and (max-width: 676px) {
   #content{

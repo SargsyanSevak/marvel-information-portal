@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 .character_card:active {
-  box-shadow: 5px 5px 20px #9f0013;
+  box-shadow: 5px 5px 20px var(--red);
 }
 .character_card img {
   width: 100%;

@@ -28,47 +28,18 @@
   justify-content: space-around;
   align-items: center;
 }
-.title_btns h4 {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-}
 .btns_group_details {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.description_container p {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-}
-.comics_container ul {
-  list-style: none;
-}
-.comics__title {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  padding: 20px 0px;
-}
+
 .comics_item_li {
   width: 100%;
   min-height: 25px;
   margin: 5px 0px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
   display: flex;
   justify-content: flex-start;
   align-items: center;

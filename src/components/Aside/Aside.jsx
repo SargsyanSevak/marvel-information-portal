@@ -14,25 +14,34 @@ const Aside = () => {
           <div className="character_details">
             <div className="container">
               <div className="img_container">
-                <img src={activeCharacter[0].thumbnail.path+'.jpg'} alt="" />
+                <img src={activeCharacter[0].thumbnail.path + ".jpg"} alt="" />
               </div>
               <div className="title_btns">
-                <h4>{activeCharacter[0].name}</h4>
+                <h4 className="title_bold_black_22">
+                  {activeCharacter[0].name}
+                </h4>
                 <div className="btns_group_details">
-                  <Button appearance={'red'} href={`/search/${activeCharacter[0].id}`}>HOMEPAGE</Button>
+                  <Button
+                    appearance={"red"}
+                    href={`/search/${activeCharacter[0].id}`}
+                  >
+                    HOMEPAGE
+                  </Button>
                   <Button>WIKI</Button>
                 </div>
               </div>
             </div>
             <div className="description_container">
-              <p>{activeCharacter[0].comics.description}</p>
+              <p className="title_14">
+                {activeCharacter[0].comics.description}
+              </p>
             </div>
             <div className="comics_container">
-              <ul className="comics__title">
+              <ul className="title_bold_18">
                 Comics :
                 {activeCharacter[0].comics.items.map(function (item, i) {
                   return (
-                    <li key={i} className="comics_item_li">
+                    <li key={i} className="comics_item_li title_14">
                       {item.name}
                     </li>
                   );
