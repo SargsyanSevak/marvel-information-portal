@@ -18,10 +18,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  min-height: 60px;
 }
 .search input {
-  width: 250px;
+  width: 220px;
   max-width: 100%;
   height: 38px;
   border: none;
@@ -41,4 +41,37 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+}
+
+@media all and (max-width: 940px) {
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap: 50px;
+  }
+  .search_title {
+    text-align: center;
+  }
+  .search_result {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media all and (max-width: 440px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .search_title {
+    text-align: center;
+  }
+  
 }

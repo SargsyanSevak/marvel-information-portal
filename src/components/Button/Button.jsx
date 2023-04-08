@@ -7,7 +7,7 @@ const Button = ({ appearance,href, children, ...props }) => {
   const classNames = require("classnames");
 
   return (
-    <Link to={href} className='link'>
+    <Link to={href}>
       <button
         className={classNames(
           styles.btn1,

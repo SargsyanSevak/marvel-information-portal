@@ -39,10 +39,10 @@ const RandomCharacters = () => {
               </div>
               <div className="btn_group">
                 <Button appearance="red" href={`/search/${item?.id}`}>
-                  Homepage
+                  HOMEPAGE
                 </Button>
                 <Button appearance="gray" href={"#"}>
-                  Wiki
+                  WIKI
                 </Button>
               </div>
             </div>

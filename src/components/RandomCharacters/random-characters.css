@@ -63,6 +63,7 @@
   .random-characters-right {
     width: 100%;
     height: 230px;
+   
   }
   .random__characters{
     flex-direction: column;
@@ -72,5 +73,15 @@
     .random-characters-left .img_container img {
         max-width: 100%;
     }
-    
+    .random-characters-right .paragraph_bold_24{
+      font-size: 18px;
+    }
+    .random-characters-right-images{
+        width: 50%;
+    }
+    .mjolnir{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
   }

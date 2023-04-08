@@ -51,6 +51,13 @@ ul {
   line-height: 28px;
   color: #FFFFFF;
 }
+.title_14{
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
 .title_bold_14{
   font-family: 'Roboto Condensed';
   font-style: normal;

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./comics.css";
 import { Link } from "react-router-dom";
 import HeaderBanner from "../../components/HeaderBanner/HeaderBanner";
-import MyButton from "../../components/MyButton/MyButton";
 import { useContext } from "react";
 import { ContextValue } from "../../components/MyContext/MyContext";
 import Loader from "../../components/Loader/Loader";
+import Button from "../../components/Button/Button";
 const itemsPerRow = 12;
 
 const Comics = () => {
@@ -43,9 +43,7 @@ const Comics = () => {
       )}
       {next < comicsData?.length && (
         <div className="load_more_comics">
-          <Link onClick={handleMoreImage}>
-            <MyButton title="LOAD MORE" color="white" bg="#9F0013" />
-          </Link>
+          <Button appearance={'red'} onClick={handleMoreImage}>LOAD MORE</Button>
         </div>
       )}
     </div>

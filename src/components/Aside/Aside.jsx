@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
-import MyButton from "../MyButton/MyButton";
+import Button from "../Button/Button";
 import { ContextValue } from "../MyContext/MyContext";
 import SearchBar from "../SearchBar/SearchBar";
 import SkeletonAnim from "../Skeleton/Skeleton";
@@ -20,10 +19,8 @@ const Aside = () => {
               <div className="title_btns">
                 <h4>{activeCharacter[0].name}</h4>
                 <div className="btns_group_details">
-                  <Link to={`/search/${activeCharacter[0].id}`}>
-                  <MyButton title="HOMEPAGE" bg="#9F0013" color="white" />
-                  </Link>
-                  <MyButton title="WIKI" bg="#5C5C5C" color="white" />
+                  <Button appearance={'red'} href={`/search/${activeCharacter[0].id}`}>HOMEPAGE</Button>
+                  <Button>WIKI</Button>
                 </div>
               </div>
             </div>

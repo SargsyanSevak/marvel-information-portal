@@ -25,7 +25,7 @@
 .title_btns {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .title_btns h4 {
@@ -38,7 +38,7 @@
 .btns_group_details {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 .description_container p {
   font-family: "Roboto Condensed";
