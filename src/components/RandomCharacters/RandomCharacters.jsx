@@ -36,7 +36,10 @@ const RandomCharacters = () => {
                 <h4 className="title_bold_black_22">{item?.name}</h4>
               </div>
               <div className="description">
-                <p className="paragraph_14">{item?.description}</p>
+                <p className="paragraph_14">
+                  {item?.description ? item?.description : 'Description not found'}
+                  
+                  </p>
               </div>
               <div className="btn_group">
                 <Button appearance="red" href={`/search/${item?.id}`}>
