@@ -11,12 +11,15 @@ const Main = () => {
   const { setActiveCharacter } = useContext(ContextValue);
   const { charactersData } = useContext(ContextValue);
   const handleFilter = (id) => {
+    setTimeout(()=>{
+      
+    },5000)
     setActiveCharacter(
       charactersData.filter((character) => character.id === id)
     );
   };
   const handleMoreImage = () => {
-    setNext(next + 3);
+    setNext(next + 9);
   };
   return (
     <div id="content">

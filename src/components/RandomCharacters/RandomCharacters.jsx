@@ -11,11 +11,12 @@ const RandomCharacters = () => {
   const { charactersData } = useContext(ContextValue);
   const [item, setItem] = useState([]);
 
-  const getRandomElement = async () => {
-    let rand = await charactersData[
-      Math.floor(Math.random() * charactersData.length)
-    ];
-    setItem(rand);
+  const getRandomElement = async() => {
+    let rand = await charactersData[Math.floor(Math.random() * charactersData.length)];
+    setItem([]);
+    setTimeout(() => {
+      setItem(rand);
+    }, 1000);
   };
 
   useEffect(() => {

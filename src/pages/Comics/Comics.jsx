@@ -13,7 +13,7 @@ const Comics = () => {
   const { comicsData } = useContext(ContextValue);
 
   const handleMoreImage = () => {
-    setNext(next + 4);
+    setNext(next + 12);
   };
   return (
     <div className="comics">
